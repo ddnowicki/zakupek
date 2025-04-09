@@ -1,6 +1,8 @@
-# Zakupek
+# zakupek-front
 
-An AI-powered web application designed to streamline the creation of shopping lists. By analyzing user registration data, shopping history, and seasonal product availability, Zakupek generates tailored shopping lists that save time and improve shopping efficiency.
+An AI-powered web application designed to streamline the creation of shopping lists. By analyzing user registration data, shopping history, and seasonal product availability, zakupek-front generates tailored shopping lists that save time and improve shopping efficiency.
+
+> **Note:** This repository contains only the frontend part of the Zakupek application. For the backend services, please refer to the [zakupek-api](https://github.com/ddnowicki/zakupek-api) repository.
 
 ## Table of Contents
 
@@ -18,7 +20,7 @@ An AI-powered web application designed to streamline the creation of shopping li
     - **TypeScript 5:** Provides static typing, improving code quality and development speed.
     - **Tailwind CSS 4:** Utility-first CSS framework for rapid UI design and responsive layouts.
 - **Backend:**
-    - **.NET 8:** A scalable framework for building efficient web applications.
+    - A .NET-based REST API that provides backend services via RESTful endpoints.
 - **AI Integration:**
     - **Openrouter.ai:** Provides unified access to multiple AI models for generating shopping list recommendations.
 - **CI/CD & Hosting:**
@@ -30,8 +32,8 @@ An AI-powered web application designed to streamline the creation of shopping li
 1. **Clone the Repository:**
 
     ```shell
-    git clone https://github.com/ddnowicki/zakupek.git
-    cd zakupek
+    git clone https://github.com/ddnowicki/zakupek-front.git
+    cd zakupek-front
     ```
 
 2. **Install Node Dependencies:**

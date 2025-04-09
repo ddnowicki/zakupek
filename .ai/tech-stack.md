@@ -15,10 +15,9 @@ Frontend:
 
 Backend:
 
-- .NET 8
-    - Wydajny i skalowalny framework do budowy aplikacji webowych
-    - Wsparcie dla asynchronicznego programowania
-    - Silne typowanie z C#
+- .NET-based REST API
+    - Backend is implemented as a RESTful service using .NET.
+    - Exposes endpoints for data integration with the frontend.
 
 Komunikacja z modelami AI:
 
