@@ -9,7 +9,8 @@
         "test": "ng test",
         "lint": "ng lint",
         "format": "prettier --write .",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "lint-staged": "lint-staged"
     },
     "private": true,
     "dependencies": {
@@ -33,7 +34,7 @@
         "angular-eslint": "19.3.0",
         "eslint": "^9.23.0",
         "eslint-config-prettier": "^10.1.1",
-        "husky": "^9.1.7",
+        "husky": "^8.0.0",
         "jasmine-core": "~5.4.0",
         "karma": "~6.4.0",
         "karma-chrome-launcher": "~3.2.0",
@@ -46,7 +47,11 @@
         "typescript-eslint": "8.27.0"
     },
     "lint-staged": {
-        "*.ts": "eslint --fix",
-        "*.scss": "prettier --write"
+        "*.{js, jsx,ts,tsx}": [
+            "eslint --quiet --fix"
+        ],
+        "*.{json,js,ts,jsx,tsx,html,css}": [
+            "prettier --write --ignore-unknown"
+        ]
     }
 }
