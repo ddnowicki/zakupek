@@ -1,59 +1,88 @@
 # Zakupek
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+An AI-powered web application designed to streamline the creation of shopping lists. By analyzing user registration data, shopping history, and seasonal product availability, Zakupek generates tailored shopping lists that save time and improve shopping efficiency.
 
-## Development server
+## Table of Contents
 
-To start a local development server, run:
+- [Tech Stack](#tech-stack)
+- [Getting Started Locally](#getting-started-locally)
+- [Available Scripts](#available-scripts)
+- [Project Scope](#project-scope)
+- [Project Status](#project-status)
+- [License](#license)
 
-```bash
-ng serve
-```
+## Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Frontend:**
+    - **Angular 19:** A comprehensive framework with a robust ecosystem for building reactive and highly interactive UIs.
+    - **TypeScript 5:** Provides static typing, improving code quality and development speed.
+    - **Tailwind CSS 4:** Utility-first CSS framework for rapid UI design and responsive layouts.
+- **Backend:**
+    - **.NET 8:** A scalable framework for building efficient web applications.
+- **AI Integration:**
+    - **Openrouter.ai:** Provides unified access to multiple AI models for generating shopping list recommendations.
+- **CI/CD & Hosting:**
+    - **GitHub Actions:** Automates testing and deployment.
+    - **Self-hosted server:** Offers full control over infrastructure.
 
-## Code scaffolding
+## Getting Started Locally
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. **Clone the Repository:**
 
-```bash
-ng generate component component-name
-```
+    ```shell
+    git clone https://github.com/ddnowicki/zakupek.git
+    cd zakupek
+    ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. **Install Node Dependencies:**
+   Ensure you have Node.js version specified in the `.nvmrc` file **v22.14.0**.
 
-```bash
-ng generate --help
-```
+    ```shell
+    nvm use
+    npm install
+    ```
 
-## Building
+3. **Run the Application:**
+   Start the Angular development server:
+    ```shell
+    npm start
+    ```
+    The application will be available at [http://localhost:4200](http://localhost:4200).
 
-To build the project run:
+## Available Scripts
 
-```bash
-ng build
-```
+- **ng:** Alias to run Angular CLI commands.
+- **start:** Runs `ng serve` to start the development server.
+- **build:** Builds the Angular application for production.
+- **watch:** Builds the application in watch mode for development.
+- **test:** Executes unit tests using Angular’s testing framework.
+- **lint:** Runs ESLint to analyze code style and quality.
+- **format:** Formats code using Prettier.
+- **prepare:** Installs Husky hooks for pre-commit checks.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Project Scope
 
-## Running unit tests
+- **Functionalities Included in MVP:**
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+    - User registration and login with demographic and dietary preferences.
+    - AI-driven generation of shopping lists based on historical data, seasonal products, and user profile.
+    - Manual creation, editing, and deletion of shopping list items.
+    - Automatic categorization of items (e.g., beverages, bakery, dairy).
+    - Search functionality for products during list editing.
+    - Viewing past shopping lists in a user history section.
+    - Notifications regarding the seasonality of products.
 
-```bash
-ng test
-```
+- **Out-of-Scope for MVP:**
+    - Multi-store list segmentation.
+    - Receipt or advanced report validations.
+    - Mobile version support.
+    - Brand-specific product recommendations.
+    - Advanced filtering and reporting capabilities.
 
-## Running end-to-end tests
+## Project Status
 
-For end-to-end (e2e) testing, run:
+The project is currently in the **MVP** stage and under active development.
 
-```bash
-ng e2e
-```
+## License
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.

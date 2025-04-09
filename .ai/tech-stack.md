@@ -15,17 +15,17 @@ Frontend:
 
 Backend:
 
-- Supabase
-    - Kompleksowa platforma łącząca bazę danych PostgreSQL z API
-    - Wbudowane uwierzytelnianie i autoryzacja
-    - Real-time subscriptions i edge functions
+- .NET 8
+    - Wydajny i skalowalny framework do budowy aplikacji webowych
+    - Wsparcie dla asynchronicznego programowania
+    - Silne typowanie z C#
 
 Komunikacja z modelami AI:
-Openrouter.ai
 
-- Jednolity dostęp do wielu modeli AI
-- Elastyczne API upraszczające integrację
-- Optymalizacja kosztów przez wybór odpowiednich modeli
+- Openrouter.ai
+    - Jednolity dostęp do wielu modeli AI
+    - Elastyczne API upraszczające integrację
+    - Optymalizacja kosztów przez wybór odpowiednich modeli
 
 CL/CD i Hosting:
 
